@@ -7,13 +7,13 @@ st.info('This app builds a machine learning model')
 
 with st.expander('Data'):
   st.write('**Raw Data**')
-df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
-df
+  df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
+  df
 
-st.write('**X**')
-X = df.drop('species',axis=1)
-X
+  st.write('**X**')
+  X = df.drop('species',axis=1)
+  X
 
-st.write('**y**')
-y = df.species
-y
+  st.write('**y**')
+  y = df.species
+  y
