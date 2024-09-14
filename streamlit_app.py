@@ -3,9 +3,9 @@ import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
-st.title('ML App')
+st.title('App de clasificación de especies')
 
-st.info('This app builds a machine learning model')
+st.info('Ésta app clasifica las especies de pingüinos con el modelo de bosque aleatorio')
 
 with st.expander('Data'):
   st.write('**Raw Data**')
@@ -90,7 +90,7 @@ df_prediction_proba.rename(columns={0:'Adelie',
                                     2:'Gentoo'})
 
 #Display predicted species
-st.subheader('Predicted Species')
+st.subheader('Predicción de especies')
 st.dataframe(df_prediction_proba,
              column_config={
                'Adelie':st.column_config.ProgressColumn(
